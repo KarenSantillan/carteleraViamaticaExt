@@ -12,7 +12,7 @@ public class PeliculaController {
     @Autowired
     private PeliculaService peliculaService;
     @PostMapping("/guardarPelicula")
-    public Pelicula guardarPelicula(@RequestBody Pelicula pelicula){
+    public String guardarPelicula(@RequestBody Pelicula pelicula){
         return peliculaService.guardarPelicula(pelicula);
     }
 }
